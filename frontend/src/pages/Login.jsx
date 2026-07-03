@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const url = "https://your-backend-url.com"; // apna backend URL daalo
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const DeliveryLogin = ({ setToken }) => {
     const [data, setData] = useState({ email: "", password: "" });

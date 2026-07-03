@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const url = "https://your-backend-url.com";
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const Dashboard = ({ token }) => {
     const [availableOrders, setAvailableOrders] = useState([]);
