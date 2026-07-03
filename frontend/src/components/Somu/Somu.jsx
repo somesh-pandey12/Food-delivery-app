@@ -7,7 +7,7 @@ const Somu = () => {
     const { url } = useContext(StoreContext);
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { role: "assistant", content: "Hey! Main Somu hoon 👋 FoodVerse ka assistant. Order, menu, ya kuch bhi puchh sakte ho!" }
+        { role: "assistant", content: "Hey! I'm Somu 👋 Your FoodVerse assistant. Ask me anything about orders, menu, or anything else!" }
     ]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
