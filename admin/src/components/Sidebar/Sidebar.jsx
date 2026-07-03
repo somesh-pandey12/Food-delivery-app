@@ -54,16 +54,9 @@ const Sidebar = () => {
 
     return (
         <div className='sidebar' style={sidebarStyle}>
-
             <p style={sectionLabelStyle}>Menu</p>
-
             <div className="sidebar-options">
-
-                <NavLink
-                    to='/add'
-                    className="sidebar-option"
-                    style={linkStyle}
-                >
+                <NavLink to='/add' className="sidebar-option" style={linkStyle}>
                     {({ isActive }) => (
                         <>
                             <span style={iconWrapStyle(isActive)}>➕</span>
@@ -72,11 +65,7 @@ const Sidebar = () => {
                     )}
                 </NavLink>
 
-                <NavLink
-                    to='/list'
-                    className="sidebar-option"
-                    style={linkStyle}
-                >
+                <NavLink to='/list' className="sidebar-option" style={linkStyle}>
                     {({ isActive }) => (
                         <>
                             <span style={iconWrapStyle(isActive)}>📋</span>
@@ -85,11 +74,7 @@ const Sidebar = () => {
                     )}
                 </NavLink>
 
-                <NavLink
-                    to='/orders'
-                    className="sidebar-option"
-                    style={linkStyle}
-                >
+                <NavLink to='/orders' className="sidebar-option" style={linkStyle}>
                     {({ isActive }) => (
                         <>
                             <span style={iconWrapStyle(isActive)}>🚚</span>
@@ -98,11 +83,7 @@ const Sidebar = () => {
                     )}
                 </NavLink>
 
-                <NavLink
-                    to='/delivery-partners'
-                    className="sidebar-option"
-                    style={linkStyle}
-                >
+                <NavLink to='/delivery-partners' className="sidebar-option" style={linkStyle}>
                     {({ isActive }) => (
                         <>
                             <span style={iconWrapStyle(isActive)}>🛵</span>
@@ -110,9 +91,7 @@ const Sidebar = () => {
                         </>
                     )}
                 </NavLink>
-
             </div>
-
         </div>
     );
 };
