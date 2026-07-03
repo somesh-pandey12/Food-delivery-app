@@ -1,7 +1,6 @@
 // File Location: backend/routes/userRoute.js
 
 import express from "express";
-// ✅ Import statements ko bilkul matched name "getUserProfile" diya hai
 import { 
     loginUser, 
     registerUser, 
@@ -9,7 +8,7 @@ import {
     logoutUser, 
     getUserProfile 
 } from "../controllers/userController.js"; 
-import authMiddleware from "../middleware/auth.js"; // Tumhari structural middleware file
+import authMiddleware from "../middleware/auth.js";
 
 const userRouter = express.Router();
 

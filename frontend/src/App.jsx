@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import PlaceOrder from "./pages/PlaceOrder";
 import Verify from "./pages/Verify/Verify";
+import Somu from "./components/Somu/Somu";
 import MyOrders from "./pages/MyOrders/MyOrders";
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
 
     return (
         <>
-            {/* Swiggy Style Auth Popup Matrix */}
+            {}
             {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : null}
 
             {/* Global Context Application Wrapper */}
@@ -55,6 +56,7 @@ const App = () => {
                 {/* Persistent Platform Footer */}
                 <Footer />
             </div>
+            <Somu />
         </>
     );
 };
