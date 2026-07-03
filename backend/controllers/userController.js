@@ -332,44 +332,20 @@ const logoutUser = async (
 };
 
 // 👤 5. Get User Profile
-const getUserProfile = async (
-    req,
-    res
-) => {
 
+const getUserProfile = async (req, res) => {
     try {
-
-        const user =
-            await userModel.findById(
-                req.body.userId
-            ).select("-password");
+        const user = await userModel.findById(req.userId).select("-password");
 
         if (!user) {
-
-            return res.status(404).json({
-                success: false,
-                message:
-                    "User profile context not found"
-            });
+            return res.status(404).json({ success: false, message: "User not found" });
         }
 
-        res.status(200).json({
-            success: true,
-            user
-        });
+        res.json({ success: true, data: user });
 
     } catch (error) {
-
-        console.error(
-            "❌ Profile Retrieval Engine Error:",
-            error
-        );
-
-        res.status(500).json({
-            success: false,
-            message:
-                "Server error resolving user profiles"
-        });
+        console.error("Get Profile Error:", error);
+        res.status(500).json({ success: false, message: "Error fetching profile" });
     }
 };
 
