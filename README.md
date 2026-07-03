@@ -33,7 +33,7 @@
 * ## 🔗 Live Deployment Links
 * 
 * **Customer Web App:** https://food-verse-mern-app.vercel.app
-* **Admin Dashboard Portal:** [https://foodverse-admin.vercel.app](https://food-verse-mern-app-ete4-33oawblyp-somesh-pandey12s-projects.vercel.app)
+* **Admin Dashboard Portal:** [https://food-verse-mern-app-ete4.vercel.app]
 
 ### Backend
 * **Node.js & Express.js** (RESTful API architecture)
